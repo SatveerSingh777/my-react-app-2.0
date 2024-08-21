@@ -2,16 +2,16 @@
 import { useState } from 'react';
 import './App.css';
 import Alert from './Components/Alert';
-import About from './Components/About';
+// import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [theme, setThemenStyle] = useState({
     color: "black",
     backgroundColor: "white",
-    type: "light"
+    type: "danger"
   });
   // ----------------------------------------------------------------
   const styleGreen = () => {
@@ -100,14 +100,17 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
             <Navbar styleGreen={styleGreen} styleBlue={styleBlue} styleRed={styleRed} styleDark={styleDark} theme={theme} title="To-Up" />
             <Alert alert={alert} />
         <Routes>
             <Route path="/about" element={<About theme={theme} />} />
             <Route path="/" element={<TextForm theme={theme} showAlert={showAlert} title="Write you text" />}/>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Navbar styleGreen={styleGreen} styleBlue={styleBlue} styleRed={styleRed} styleDark={styleDark} theme={theme} title="To-Up" />
+      <Alert alert={alert} />
+      <TextForm theme={theme} showAlert={showAlert} title="Write you text" />
     </>
   );
 }
