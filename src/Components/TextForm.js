@@ -78,7 +78,7 @@ export default function TextForm(props) {
       <div className='container my-3' style={props.theme}>
         <h2>Summries your text</h2>
         <p>{Text.length} Characters and {Text.trim().split(/\s+/).filter(word => word !== '').length} Words</p>
-        <p>{Text.trim().split(/\s+/).filter(word => word !== '').length} Seconds, {Text.trim().split(/\s+/).filter(word => word !== '').length * 0.005} Minuts to read</p>
+        <p>{Text.trim().split(/\s+/).filter(word => word !== '').length *  0.46} Seconds, {Text.trim().split(/\s+/).filter(word => word !== '').length * 0.0076.toFixed(0)} Minuts to read</p>
         <h4>Preview</h4>
         <p>{Text.length > 0 ? Text : "No text to show"}</p>
       </div>
