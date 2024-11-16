@@ -49,7 +49,7 @@ export default function About(props) {
         </ul>
       </div>
       <div className="container">
-        <button type="button" onClick={toggleBtn} style={btnStyle} class="btn btn-dark my-3 mx-2">{btnText}</button>
+        <button type="button" onClick={toggleBtn} style={btnStyle} className="btn btn-dark my-3 mx-2">{btnText}</button>
       </div>
     </>
   )

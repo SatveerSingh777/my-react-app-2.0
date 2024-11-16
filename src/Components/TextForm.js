@@ -66,13 +66,13 @@ export default function TextForm(props) {
         <div className="form-group" /*style={props.theme}*/>
           <h2>{props.title}</h2>
           <textarea style={props.theme} className="form-control" id="exampleFormControlTextarea1" value={Text} onChange={handleOnChange} rows="8"></textarea>
-          <button type="button" class={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleToUpper}>Upper case</button>
-          <button type="button" class={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleToLower}>lower case</button>
-          <button type="button" class={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleToClear}>Clear</button>
-          <button type="button" class={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleUndo}>Undo</button>
-          <button type="button" class={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleCopy}> {copied ? "Copied!" : "Copy Text"}
+          <button type="button" className={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleToUpper}>Upper case</button>
+          <button type="button" className={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleToLower}>lower case</button>
+          <button type="button" className={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleToClear}>Clear</button>
+          <button type="button" className={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleUndo}>Undo</button>
+          <button type="button" className={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleCopy}> {copied ? "Copied!" : "Copy Text"}
           </button>
-          <button type="button" class={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleRemoveExtraSpaces}>Remove extra spaces</button>
+          <button type="button" className={`btn btn-${props.theme.type} mt-3 mx-3`} onClick={handleRemoveExtraSpaces}>Remove extra spaces</button>
         </div>
       </div>
       <div className='container my-3' style={props.theme}>
