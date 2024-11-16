@@ -14,15 +14,15 @@ export default function Navbar(props) {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="/">{props.home}</a>
           </li>
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <a className="nav-link" href="/about">{props.about}</a>
-          </li> */}
+          </li>
         
-        </ul>
+        </ul> */}
         <button type="button" onClick={props.styleDark}  className="btn btn-dark mt-3 mx-3" >Dark</button>
         <button type="button" onClick={props.styleRed} className="btn btn-danger mt-3 mx-3" >Red</button>
         <button type="button" onClick={props.styleGreen}  className="btn btn-success mt-3 mx-3">Green</button>
