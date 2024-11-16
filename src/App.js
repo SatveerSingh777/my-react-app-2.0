@@ -108,7 +108,7 @@ function App() {
             <Route path="/" element={<TextForm theme={theme} showAlert={showAlert} title="Write you text" />}/>
         </Routes>
       </BrowserRouter> */}
-      <Navbar styleGreen={styleGreen} styleBlue={styleBlue} styleRed={styleRed} styleDark={styleDark} theme={theme} title="TextUtils" />
+      <Navbar styleGreen={styleGreen} styleBlue={styleBlue} styleRed={styleRed} styleDark={styleDark} theme={theme} title="TextUtils" home="Home" />
       <Alert alert={alert} />
       <TextForm theme={theme} showAlert={showAlert} title="Write you text" />
     </>
